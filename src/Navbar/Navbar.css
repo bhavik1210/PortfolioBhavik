@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+}
+.header .logo {
+    font-size: 25px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #0e2431;
+  }
+
+  .header .logo i {
+    font-size: 25px;
+    margin-right: 2px;
+  }
+  .header .logo:hover{
+    color: #2b469e;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar li{
+    padding: 10px 20px;
+  }
+  .navbar a{
+    font-size: 20px;
+    color: #0e2431;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+    position: relative;
+  }
+  .navbar a:hover{
+    color: #2b469e;
+  }
+  .navbar a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #2b469e;
+    display: block;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+  }
+  .navbar a:hover::after{
+    width: 100%;
+  }
+  #menustyle {
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(24, 2, 63);
+    display: none;
+  }
+  #menustyle1{
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(24, 2, 63);
+    display: none;
+}
+  .header input{
+    display: none;
+
+  }
+ 
+
+
+  @media (max-width: 768px) {
+    #menustyle {
+      display: block;
+    }
+    #menustyle1{
+        display: none;
+    }
+     .navbar {
+        position: absolute;
+        top: 55px;
+        background-color: #0e2431;
+        color: rgb(248, 0, 0);
+         display: none;
+    }
+    
+    input:checked ~ .navbar{
+        display: block;
+        background-color: rgba(14, 36, 49,0.8);
+        color: white;
+        left: 0%;
+        width: 100%;
+        text-align: center;
+        z-index: 99;
+       
+    }
+    input:checked ~ #menustyle{
+        display: none;
+    }
+    input:checked ~ #menustyle1 {
+        display: block;
+    }
+    .navbar a{
+        color: white;
+    }
+   
+  }
+  
+

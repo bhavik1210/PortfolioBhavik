@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+.about {
+  background: rgb(255, 255, 255);
+}
+.about h2 {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+.about h2::after{
+    text-align: center;
+    content: "";
+    width: 10%;
+    height: 3px;
+    background-color: #020133;
+    display: block;
+    position: absolute;
+    left: 45%;
+    border-radius: 10px;
+
+}
+
+.main {
+  display: flex;
+  /* flex-direction: row; */
+  gap: 20px;
+  /* flex-wrap: wrap; */
+  padding: 20px;
+}
+.aboutimg {
+  text-align: center;
+  width: 50%;
+  /* overflow: hidden; */
+}
+.aboutimg img {
+  margin: 30px;
+  width: 70%;
+  height: 500px;
+  border-radius: 5%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  filter: grayscale(60%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.aboutimg img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.aboutcontent {
+  width: 50%;
+  padding: 20px;
+}
+.aboutcontent h3 {
+  color: rgb(27, 27, 27);
+  font-size: 22px;
+}
+.aboutcontent .tag {
+  font-size: 22px;
+  color: #020133;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.aboutcontent p {
+  font-size: 25px;
+  margin-top: 25px;
+  font-family: "Nunito";
+  /* font-weight: 600; */
+  text-transform: none;
+}
+
+.box-container {
+}
+.box span {
+  text-transform: none;
+}
+.box span {
+  color: #011aff;
+}
+
+.resumebtn {
+  margin-top: 50px;
+}
+.resumebtn .btn {
+  padding: 20px 40px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  font-family: "Nunito", sans-serif;
+}
+
+.resumebtn .btn span{
+    font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 2px;
+
+}
+.resumebtn .btn i{
+    margin-left: 5px;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+.resumebtn .btn:hover i {
+    transform: translateX(5px);
+  }
+
+
+  @media (max-width:600px) {
+    .main{
+        padding: 10px;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .aboutimg{
+        width: 100%;
+    }
+    .aboutimg img{
+        margin: 0 auto;
+    width: 80%;
+    }
+    .aboutcontent {
+        width: 100%;
+        padding: 20px;
+      }
+      .resumebtn{
+        text-align: center;
+        margin-top: 30px;
+      }
+
+    
+  }

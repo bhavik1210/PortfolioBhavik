@@ -1,0 +1,111 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.work {
+    /* background: #010124; */
+    background: linear-gradient(to bottom, #000031, #00002c);
+    padding-bottom: 10px;
+  }
+  .work h2{
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  .work .heading span {
+    color: rgb(255, 230, 0);
+  }
+  .work .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 20px;
+  }
+  .work .box-container .boxwork {
+    border-radius: 10px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+   width: 45%;
+   
+
+  }
+  .work .box-container .boxwork img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+  }
+  .work .box-container .boxwork .content {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 85%;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+  }
+  .work .box-container .boxwork .content .tag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    padding-left: 15px;
+    background: #ffd900;
+  }
+  .work .box-container .boxwork .content .tag h3 {
+    font-size: 25px;
+  }
+  .work .box-container .boxwork:hover .content {
+    top: 40%;
+  }
+  .work .box-container .boxwork .content .desc {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .work .boxwork .desc p {
+    font-size: 20px;
+  }
+  .work .boxwork .desc .btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .work .desc .btns .btn1 {
+    
+    display: inline;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    background-color: rgb(12, 12, 12);
+    margin-right: 30px;
+  }
+  .work .desc .btns .btn1:hover {
+    background: #310ae0f5;
+  }
+  .work .desc .btns .btn1:hover {
+    background: #310ae0f5;
+  }
+
+
+  @media (max-width:600px) {
+    .work .box-container {
+      flex-direction: column;
+      padding: 20px;
+
+      
+
+    }
+    .work .box-container .boxwork {
+      width: 100%;
+    }
+
+  }
